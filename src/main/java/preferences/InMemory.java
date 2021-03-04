@@ -1,7 +1,5 @@
 package preferences;
 
-import java.io.File;
-
 public class InMemory implements PreferencesService {
 
     private Preferences preferences;

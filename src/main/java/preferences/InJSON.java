@@ -8,7 +8,7 @@ public class InJSON implements PreferencesService {
     private ObjectMapper objectMapper = new ObjectMapper();
 
     @Override
-    public void save(Preferences preferences) throws IOException {
+    public void save(Preferences preferences) {
         try {
             objectMapper.writeValue(new File("preferences.json"), preferences);
         }
